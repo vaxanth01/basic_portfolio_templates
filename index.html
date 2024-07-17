@@ -47,7 +47,7 @@
           <li><a href="./about.html">About</a></li>
           <li><a href="./resume.html">Resume</a></li>
           <li><a href="./services.html">Services</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./portfolio.html">Projects</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -66,46 +66,52 @@
 
   </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="he" class="d-flex align-items-center">
-    <div class="container d-flex flex-column align-items-center text-muted move-up-1inch" data-aos="zoom-in" data-aos-delay="10">
-      <h2>Vasanthkumar</h2>
-      <h2 class="text-center">I'm a professional python fullstack developer</h2>
-      <a href="./about.html" class="btn-about text-muted">About Me</a>
-    </div>
-  </section>
-  
-  <style>
-    .move-up-1inch {
-      margin-top: -4.3in;
-    }
-    
-    #he {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-  
-    #he::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url("./assets/img/vasa.jpg") top center;
-      background-size: cover;
-      opacity: 0.6; /* Adjust the opacity value as needed */
-      z-index: 1;
-    }
-  
-    #he .container {
-      position: relative;
-      z-index: 2;
-    }
-  </style>
+<!-- ======= Hero Section ======= -->
+<section id="he" class="d-flex align-items-center">
+  <div class="container text-left text-muted" data-aos="zoom-in" data-aos-delay="10">
+    <h2>Vasanthkumar</h2>
+    <h2 class="text-left">I'm a professional python fullstack developer</h2>
+    <a href="./about.html" class="btn-about text-muted" style="display: inline-block; animation: beat 1s ease-in-out infinite;">
+      <p style="color: rgb(95, 39, 101);"><b>About Me</b></p>
+    </a>
+    <style>
+      @keyframes beat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+    </style>
+  </div>
+</section>
 
+<style>
+  #he {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #he::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("./assets/img/vasa.jpg") top center;
+    background-size: cover;
+    opacity: 0.6; /* Adjust the opacity value as needed */
+    z-index: 1;
+  }
+
+  #he .container {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin-left: 50px; /* Adjust this value to move the text horizontally */
+    margin-top: 50px; /* Adjust this value to move the text vertically */
+  }
+</style>
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
